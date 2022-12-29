@@ -6,4 +6,4 @@ SELECT last_name, employee_id, manager_id, LEVEL
       CONNECT BY PRIOR employee_id = manager_id
       ORDER SIBLINGS BY last_name;
 
-
+-- source: https://docs.oracle.com/database/121/SQLRF/queries003.htm#SQLRF52332
